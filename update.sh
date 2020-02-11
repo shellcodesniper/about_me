@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-cd /WorkSpace/Rust_Rails
+cd /WorkSpace/About_me
 
 git pull
 
