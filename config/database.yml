@@ -21,5 +21,12 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: mysql2
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  encoding: utf8
+  username: hacker
+  password: snipershellqkslffkfkEp1!
+  host: maindb.ce54q1nxtsku.ap-northeast-2.rds.amazonaws.com
+  database: About_Me
+  port: 3306
+  timeout: 5000
